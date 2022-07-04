@@ -788,7 +788,7 @@ class ParticipantBallotSubmissions(ChoicePreference):
         ('private-urls', _("Use private URLs")),
         ('public', _("Use publicly accessible form")),
     )
-    default = 'off'
+    default = 'private-urls'
 
 
 @tournament_preferences_registry.register
@@ -802,7 +802,7 @@ class ParticipantFeedbackSubmissions(ChoicePreference):
         ('private-urls', _("Use private URLs")),
         ('public', _("Use publicly accessible form")),
     )
-    default = 'off'
+    default = 'private-urls'
 
 
 @tournament_preferences_registry.register
